@@ -1,0 +1,79 @@
+body{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: hsl(40, 100%, 95%);
+  color: hsl(25, 30%, 25%);
+}
+.wholeHangmanContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  border:2px solid hsl(0, 0%, 0%);
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+.hangmancontainer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows:repeat(3,1fr);
+  width: 90px;
+  position: relative;
+  left: 45px;
+  top:22px;
+  background: hsl(40, 100%, 95%);
+
+}
+.hangmancontainer p{
+  margin: 0;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.dispalyWord li{
+  list-style: none;
+  font-size: 1.5rem;
+}
+.dispalyWord{
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+.dispalyWord label{
+  display: flex;
+  gap: 5px ;
+}
+.gameAfterStart input{
+  padding: 10px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.gameAfterStart{
+  background-color: 	hsl(30, 20%, 88%);
+  padding: 10px;
+  height: 150px;
+  border-radius: 20px;
+  border:2px solid hsl(25, 30%, 25%);
+}
+button{
+  background-color: 	hsl(140, 20%, 70%);
+  border:none;
+  padding: 5px;
+  border-radius: 5px;
+  border:2px solid hsl(25, 30%, 25%);
+  justify-self: center;
+  margin: 5px;
+}
+.submitBtn{
+  background-color: 	hsl(140, 20%, 70%);
+  border-radius: 5px;
+  border:2px solid hsl(25, 30%, 25%);
+  justify-self: center;
+  font-weight: bold;
+}
